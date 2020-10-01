@@ -1,8 +1,11 @@
 const express = require('express');
 const dotenv = require('dotenv');
+const mongoConnect = require('./db/connect');
 const app = express();
 
 dotenv.config()
+
+mongoConnect();
 
 app.get('/', (req, res) => {
   res.send("Hello from server");
