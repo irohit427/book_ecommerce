@@ -1,5 +1,6 @@
 const User = require('../models/user');
 const { errorHandler } = require('../helpers/dbErrorHandler');
+const { body, validationResult } = require('express-validator');
 
 const signUp = (req, res) => {
   const user = new User(req.body);
