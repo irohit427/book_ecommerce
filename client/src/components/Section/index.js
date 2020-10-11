@@ -3,7 +3,7 @@ import { Card } from 'antd';
 import { Button } from 'antd';
 import './Section.scss';
 
-const Section = () => {
+const Section = ({ heading }) => {
   const { Meta } = Card;
   return (
     <div className="section-container">
@@ -14,8 +14,8 @@ const Section = () => {
       </div>
       <div className="sectionBody">  
         <div className="heading">
-          <p>Best Seller</p>
-          <span><a>See More</a></span> 
+          <p>{heading}</p>
+          <span><a href="/books">See More</a></span> 
         </div>
         <div className="sectionItems">
           <Card hoverable style={{ width: 200 }}

@@ -1,0 +1,29 @@
+.feature-container {
+  height: 250px;
+  padding: 0 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  .feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 60px;
+      height: 60px;
+      padding-bottom: 20px;
+    }
+  
+    p {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: -5px;
+      color: #1f3652;
+    }
+    span {
+      padding-top: 6px;
+      color: #78909c;
+    }
+  }
+}
