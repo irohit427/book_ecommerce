@@ -1,0 +1,49 @@
+header{
+  min-height: 40px;
+  background: whitesmoke;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header .logo {
+  margin-left: 40px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#first {
+  color: #ee434c;
+  padding-right: 3px;
+} 
+
+#second {
+  color: #1f3652;
+}
+
+header ul {
+  padding-top: 10px;
+  list-style: none;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul li  {
+  font-size: 16px;
+  text-decoration: none;
+  color: #1f3652;
+  padding: 0 15px;
+  font-weight: bold;
+  transition: all .3s ease-in-out;
+}
+
+header ul li:hover {
+  transform: scale(1.1);
+}
+
